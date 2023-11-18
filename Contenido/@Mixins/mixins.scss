@@ -1,0 +1,19 @@
+@mixin border($radio) {
+    -moz-border-radius: $radio;
+    -webkit-border-radius: $radio;
+    -ms-border-radius: $radio;
+    -o-border-radius: $radio;
+    border-radius: $radio;
+}
+
+article {
+    @include border(5px);
+}
+
+footer {
+    @include border(8px);
+}
+
+body {
+    background-color: rgba($color: #c2e2, $alpha: 0.5);
+}
